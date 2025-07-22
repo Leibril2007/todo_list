@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo List - En construcción</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    body {
+      background-color: #27ae60; /* Fondo verde */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #2d3436;
+    }
+
+    .card {
+      background-color: #fff; /* Contenedor blanco */
+      padding: 40px 60px;
+      border-radius: 16px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .icon {
+      font-size: 4em;
+      color: #27ae60;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    p {
+      font-size: 1.3em;
+      color: #636e72;
+      margin-top: 10px;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">
+      <i class="fas fa-list-check"></i>
+    </div>
+    <h1>Todo List</h1>
+    <p>¡Estamos trabajando en ello!</p>
+  </div>
+</body>
+</html>
