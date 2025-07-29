@@ -11,8 +11,12 @@ html{
 
 :root{
     --color-rojo: red;
-    --color-verde: green;
+    --color-verde: #27ae60;
+    --color-verde-claro: #08ee64;
+    --color-verde-oscuro: #0f552c;
+    --color-blanco: rgb(239, 239, 239);
     --color-azul: blue;
+    --font-titulos: "Inter", sans-serif;
 
     --titulo-h1: 2.6rem;
     --titulo-h2: 1.8rem;
