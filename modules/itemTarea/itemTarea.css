@@ -1,6 +1,10 @@
+@import url('../../config.css');
+
 .tarea {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3rem 1fr 10rem 15rem 15rem 1fr 15rem;
     align-items: center;
+
     gap: 15px;
     padding: 10px 20px;
     border: 1px solid #ccc;
@@ -8,7 +12,6 @@
     background-color: #fff;
     font-family: 'Segoe UI', sans-serif;
     margin-bottom: 10px;
-/*     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);  */
     box-shadow: 2.3px 4px rgba(0, 0, 0, 0.04); 
   }
   
@@ -17,6 +20,11 @@
     padding: 3px 8px;
     border-radius: 5px;
     font-size: 14px;
+    background-color: var(--color-gris-claro);
+    border: 2px solid #ddd;
+
+    display: flex;
+    justify-content: center;
   }
   
   .titulo-tarea {
@@ -27,11 +35,15 @@
   }
   
   .estado-tarea {
-    border-radius: 8px;
+    /* border-radius: 8px; */
+    border-radius: 0.5rem;
     padding: 3px 10px;
     font-size: 13px;
     text-transform: lowercase;
     font-weight: 500;
+
+    display: flex;
+    justify-content: center;
   }
   
   /* ✅ Verde claro: completado */
@@ -55,6 +67,7 @@
   .fecha-entrega {
     font-size: 13px;
     color: #444;
+    justify-self: center;
   }
   
   .integrantes-tarea {
@@ -64,7 +77,8 @@
   
   .emoji-integrante {
     display: inline-block;
-    border: 1px solid #000;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
     border-radius: 50%;
     width: 28px;
     height: 28px;
