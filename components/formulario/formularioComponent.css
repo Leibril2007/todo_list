@@ -1,0 +1,96 @@
+/* Fondo que cubre toda la pantalla */
+.fondo-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* oscurecido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Estilos del formulario */
+.form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 390px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: sans-serif;
+}
+
+.titulo-gen{
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+/* Encabezados */
+.form h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 12.5px;
+}
+
+.form .fecha-inicio {
+    font-size: 14px;
+    font-weight: bold;
+    color: #69727b;
+    margin: 0;
+}
+
+/* Inputs, selects y textarea en estilo verde-blanco */
+.form input[type="text"],
+.form input[type="date"],
+.form select,
+.form textarea {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9fdf9;
+    color: #2c3e50;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Al hacer foco: borde verde suave */
+.form input[type="text"]:focus,
+.form input[type="date"]:focus,
+.form select:focus,
+.form textarea:focus {
+    border: 1px solid #27ae60;
+    box-shadow: 0 0 4px rgba(39, 174, 96, 0.4);
+}
+
+/* Textarea ajustable */
+.form textarea {
+    resize: vertical;
+    min-height: 60px;
+    max-height: 200px;
+    font-family: inherit; /* hereda la fuente de .form (sans-serif o la que definas) */
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+/* Botón de cerrar */
+.cerrar-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.cerrar-btn:hover {
+    background-color: #1e8449;
+}

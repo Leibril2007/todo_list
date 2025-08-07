@@ -1,3 +1,5 @@
+import { formulario } from "../formulario/formularioComponent.js";
+
 export function informacion(tarea){
     
     // div base
@@ -12,7 +14,16 @@ export function informacion(tarea){
     let btnTarea = document.createElement('div');
     btnTarea.className = "btn-tarea";
     btnTarea.textContent = "+ tarea";
+
+    btnTarea.addEventListener("click", function(){
+
+        document.body.appendChild(formulario());
+
+    });
+
     divBotones.appendChild(btnTarea);
+
+
 
     // 📁 botón Archivados
     let btnArchivados = document.createElement('div');
