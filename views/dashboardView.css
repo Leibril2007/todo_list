@@ -9,3 +9,30 @@
     display: grid;
     grid-template-columns: 75% 25%;
 }
+
+@media (max-width: 700px) {
+    .seccion-1{
+        grid-template-columns: auto;
+    }
+}
+  
+  /* Tablets (entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tablets */
+}
+
+/* Laptops y escritorios pequeños (entre 1024px y 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* Estilos para laptops */
+}
+
+/* Escritorios grandes (entre 1280px y 1919px) */
+@media (min-width: 1280px) and (max-width: 1919px) {
+  /* Estilos para pantallas grandes */
+}
+
+/* Pantallas ultra anchas (desde 1920px en adelante) */
+@media (min-width: 1920px) {
+  /* Estilos para pantallas muy grandes */
+}
+  

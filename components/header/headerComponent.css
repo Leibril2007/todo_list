@@ -58,3 +58,14 @@ header h1{
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 700px) {
+    header{
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        align-items: center;
+        gap: 1rem;
+        background-color: var(--color-verde);
+        padding: 0rem 1.5rem;
+    }
+}
