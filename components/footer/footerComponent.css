@@ -1,14 +1,22 @@
+@import url('../../config.css');
+
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid black;
     gap: 1rem;
     padding: 1rem;
+
+    background-color: var(--color-verde);
+/*     background-color: #6B8E23; */
+/* background-color: #3CB371; */
 }
 
 .text-github a {
     text-decoration: none;
-    color: inherit;
     font-weight: bold;
+
+    font-size:  1.5rem;
+    font-family: var(--font-titulos);
+    color: var(--color-blanco);
 }

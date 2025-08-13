@@ -5,7 +5,7 @@ export function footer(){
     textGithub.className = "text-github";
     
     let link = document.createElement('a');
-    link.href = "https://github.com/tu-usuario"; // reemplaza con tu URL de GitHub
+    link.href = "https://github.com/Leibril2007?tab=repositories"; // reemplaza con tu URL de GitHub
     link.textContent = "@github";
     
     textGithub.appendChild(link);

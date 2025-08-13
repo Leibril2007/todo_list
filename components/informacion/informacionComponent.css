@@ -1,5 +1,6 @@
 .div-info{
     padding: 20px;
+    background-color: #ddf1dd;
 }
 
 /* 🔘 Botones superiores */
@@ -20,10 +21,9 @@
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  border: 2px solid #ccc;
   background-color: white;
   transition: all 0.2s ease-in-out;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 
   display: flex;
   align-items: center;
@@ -31,22 +31,21 @@
 }
 
 .btn-tarea {
-  background-color: #d8e8ff;
-  border-color: #90bfff;
-  color: #0066cc;
+  background-color: #2ebcb5;
+  color: #ffffff;
 }
 
 .btn-tarea:hover {
-  background-color: #a9ceff;
+  background-color: #008B8B;
 }
 
 .btn-archivados {
-  background-color: #f0f0f0;
-  color: #555;
+  background-color: #76c9b3;
+  color: #303030;
 }
 
 .btn-archivados:hover {
-  background-color: #e0e0e0;
+  background-color: #2E8B57;
 }
 
 /* 📦 Caja de información de tarea */
@@ -71,7 +70,7 @@
 }
 
 /* Colores según estado */
-.estado-completado {
+/* .estado-completado {
   background-color: #d4fdd7;
   color: #008c40;
 }
@@ -84,7 +83,7 @@
 .estado-progreso {
   background-color: #fffacc;
   color: #b39b00;
-}
+} */
 
 /* 📝 Título */
 .div-informacion h3 {
@@ -132,9 +131,42 @@
   justify-content: center;
 }
 
+@media (min-width: 755px) and (max-width: 817px) {
+  .div-integrante {
+    font-size: 14px;
+    width: 42px;
+    height: 35px;
+  }
+  .div-informacion {
+    padding: 12px;
+
+  }
+  
+}
+@media (min-width: 700px) and (max-width: 755px) {
+  .div-integrante {
+    font-size: 10px;
+    width: 35px;
+    height: 35px;
+  }
+  .div-informacion {
+    padding: 12px;
+
+  }
+  .btn-archivados {
+    max-width: 8rem;
+    background-color: #76c9b3;
+    color: #303030;
+  }
+  
+}
+
 @media (max-width: 700px) {
   .div-botones {
     justify-content: center;
     align-items: center;
   }  
+  .div-informacion {
+    justify-self: center;
+  }
 }

@@ -2,7 +2,7 @@
 
 .tarea {
     display: grid;
-    grid-template-columns: 3rem 1fr 10rem 15rem 15rem 1fr 15rem;
+    grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr auto;
     align-items: center;
 
     gap: 15px;
@@ -36,6 +36,7 @@
   
   .estado-tarea {
     /* border-radius: 8px; */
+    width: 10rem;
     border-radius: 0.5rem;
     padding: 3px 10px;
     font-size: 13px;
@@ -48,8 +49,8 @@
   
   /* ✅ Verde claro: completado */
   .estado-completado {
-    background-color: #a0f3c5;
-    color: #055f35;
+    background-color: #d4fdd7;
+    color: #008c40;
   }
   
   /* 🕒 Amarillo suave: en progreso */
@@ -94,6 +95,37 @@
     padding: 0 5px;
   }
 
+@media (min-width: 700px) and (max-width: 817px) {
+  .tarea {
+    grid-template-columns: auto 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+  }
+
+  .titulo-tarea {
+    justify-self: center;
+  }
+  
+  .estado-tarea {
+    justify-self: center;
+  }
+  
+  .fecha-entrega {
+    justify-self: center;
+    grid-column: 2/3;
+  }
+  
+  .integrantes-tarea {
+    justify-self: center;
+    grid-column: 3/4;
+
+  }
+  
+  .eliminar-tarea {
+    justify-self: center;
+    grid-column: 4/5;
+  }
+}
+
 
 @media (max-width: 700px) {
     .tarea {
@@ -106,6 +138,10 @@
     }
 
     .eliminar-tarea {
+      justify-self: center;
+    }
+
+    .estado-tarea {
       justify-self: center;
     }
   
