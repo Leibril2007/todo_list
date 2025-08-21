@@ -40,14 +40,14 @@ export function informacion(tarea){
     // ✅ div estado
     let divEstado = document.createElement('div');
     divEstado.className = "estado-info";
-    divEstado.textContent = tarea.estado;
+    divEstado.textContent = tarea.estado_tarea;
 
     // Agrega color según estado
-    if (tarea.estado === "completado") {
+    if (tarea.estado_tarea === "completada") {
         divEstado.classList.add("estado-completado");
-    } else if (tarea.estado === "pendiente") {
+    } else if (tarea.estado_tarea === "pendiente") {
         divEstado.classList.add("estado-pendiente");
-    } else if (tarea.estado === "en progreso") {
+    } else if (tarea.estado_tarea === "en progreso") {
         divEstado.classList.add("estado-progreso");
     }
 
@@ -55,12 +55,12 @@ export function informacion(tarea){
 
     // 📝 h3 título
     let titulo = document.createElement('h3');
-    titulo.textContent = tarea.titulo;
+    titulo.textContent = tarea.nombre;
     divInformacion.appendChild(titulo);
 
     // 📃 p descripción
     let descripcion = document.createElement('p');
-    descripcion.textContent = tarea.descripcion;
+    descripcion.textContent = "Una breve descripcion";
     divInformacion.appendChild(descripcion);
 
     // 👥 span "Integrantes"
@@ -69,7 +69,7 @@ export function informacion(tarea){
     divInformacion.appendChild(tituloIntegrantes);
 
     // 👤 div integrantes
-    let divIntegrantes = document.createElement('div');
+/*     let divIntegrantes = document.createElement('div');
     divIntegrantes.className = "div-integrantes";
 
     tarea.integrantes.forEach(integrante => {
@@ -79,7 +79,7 @@ export function informacion(tarea){
         divIntegrantes.appendChild(divIntegrante);
     });
 
-    divInformacion.appendChild(divIntegrantes);
+    divInformacion.appendChild(divIntegrantes); */
 
     div.appendChild(divInformacion);
 

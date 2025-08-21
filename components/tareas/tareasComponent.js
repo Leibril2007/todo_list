@@ -7,11 +7,11 @@ export function tareas(tareasOb){
     tareasOb.forEach((e, i) => {
         divTareasSec.appendChild(tarea(
             i + 1, // índice
-            e.titulo,
-            e.estado,
-            e.fechaAsignacion,
-            e.fechaEntrega,
-            e.integrantes
+            e.nombre,
+            e.estado_tarea,
+            e.fecha_asignada,
+            e.fecha_entrega,
+            []
         ));
     });
 

@@ -20,7 +20,7 @@ export function tarea(indice, titulo, estado, fechaAs, fechaEnt, listaIntegrante
     divEstado.textContent = estado;
 
     // Aplicar clase por estado
-    if (estado === "completado") {
+    if (estado === "completada") {
         divEstado.classList.add("estado-completado");
     } else if (estado === "pendiente") {
         divEstado.classList.add("estado-pendiente");
