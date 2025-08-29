@@ -1,6 +1,7 @@
 import { formulario } from "../formulario/formularioComponent.js";
 
 export function informacion(tarea){
+    console.log("tarea",tarea);
     
     // div base
     let div = document.createElement('div');
@@ -58,9 +59,11 @@ export function informacion(tarea){
     titulo.textContent = tarea.nombre;
     divInformacion.appendChild(titulo);
 
+    console.log("desc", tarea.descripcion);
+
     // 📃 p descripción
     let descripcion = document.createElement('p');
-    descripcion.textContent = "Una breve descripcion";
+    descripcion.textContent = tarea.descripcion;
     divInformacion.appendChild(descripcion);
 
     // 👥 span "Integrantes"

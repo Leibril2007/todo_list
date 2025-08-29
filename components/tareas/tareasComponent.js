@@ -11,7 +11,8 @@ export function tareas(tareasOb){
             e.estado_tarea,
             e.fecha_asignada,
             e.fecha_entrega,
-            []
+            [],
+            e.descripcion,
         ));
     });
 
